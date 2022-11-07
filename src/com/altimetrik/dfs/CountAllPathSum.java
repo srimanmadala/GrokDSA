@@ -17,7 +17,7 @@ public class CountAllPathSum {
     public static void misc(String[] args) {
         List<Integer> currentPath = new LinkedList<>();
         currentPath.add(12);
-        currentPath.add(7);
+        //currentPath.add(7);
 
         ListIterator<Integer> pathIterator = currentPath.listIterator(currentPath.size());
         while (pathIterator.hasPrevious()) {
@@ -33,7 +33,8 @@ public class CountAllPathSum {
         root.left.left = new TreeNode(4);
         root.right.left = new TreeNode(10);
         root.right.right = new TreeNode(5);
-        System.out.println("Tree has path: " + CountAllPathSum.countPaths(root, 11));
+        //System.out.println("Tree has path: " + CountAllPathSum.countPaths(root, 11));
+        CountAllPathSum.misc(null);
     }
 
     private static int countPathsRecursive(TreeNode currentNode, int S, List<Integer> currentPath) {
