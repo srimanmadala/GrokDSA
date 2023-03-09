@@ -16,7 +16,7 @@ class HappyNumber {
     int sum = 0, digit;
     while (num > 0) {
       digit = num % 10;
-      sum += digit * digit;
+      sum += Math.pow(digit,2);
       num /= 10;
     }
     return sum;
