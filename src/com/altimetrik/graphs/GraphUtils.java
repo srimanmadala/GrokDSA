@@ -60,4 +60,16 @@ public class GraphUtils {
     public static void addEdge(List<List<Integer>> adjacencyList,int index, int value) {
         adjacencyList.get(index).add(value);
     }
+
+    public static List<WeightedDirectedGraph> getDirectedWeightedGraph() {
+        List<WeightedDirectedGraph> weightedDirectedGraphs = new ArrayList<>();
+        weightedDirectedGraphs.add(new WeightedDirectedGraph(0,1,4));
+        weightedDirectedGraphs.add(new WeightedDirectedGraph(0,2,1));
+        weightedDirectedGraphs.add(new WeightedDirectedGraph(2,1,2));
+        weightedDirectedGraphs.add(new WeightedDirectedGraph(2,3,5));
+        weightedDirectedGraphs.add(new WeightedDirectedGraph(1,3,1));
+        weightedDirectedGraphs.add(new WeightedDirectedGraph(3,4,3));
+
+        return weightedDirectedGraphs;
+    }
 }
